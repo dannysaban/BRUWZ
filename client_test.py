@@ -3,14 +3,14 @@ from requests import put, get ,delete ,head
 #testing...
 #result3 = put('http://localhost:5001/flask/dannysaban', data={'data': 'Remember only my milk'}).json()
 #print result3
-token = 'CAAB6QDBLXTcBAMuAVXvwrTu7LTdmSg7665cDNeZAomENTEtuIarKdR56M2f3BGwq7EgYnZBTfuBSbnAjegzh4b4eNsMP8mx5NM5Q7bhNVcgCbaOnyWO4OC7QrMtKwmvCZAIz0xv718edTr3Nw77c4fANCDBZCYxwdvoNceJZCJPuyk4ZAQG8SrHTt7nqM2hvPP5ksfgdUgaQZDZD'
+token = 'CAAB6QDBLXTcBACpf4tCm93ViG9ItEkQWf3VCls6rDJWd3w4fSxS2LfbICe6SW9ZAu2K8c6bqft5xBm4vCdKraikc88fAZClDHc2yRP7OHV9SD5ZB39EpQNKvg310ZA54fwsnYA4rjWJBa2Kqp9MruVxz0PStAofslocJMwCL9lZBi7PPDsHrVkEmuKc3FzTxX8NboF70fOQZDZD'
 
 try:
     resultGet = get('http://localhost:8008/login/'+token).json()
 except:
     resultGet = 'problem responding to get request'
     
-print resultGet 
+ 
 try:
     resultPut = put('http://localhost:8008/login/'+token, 
                     data = {'fb_update': 'Married'}).json()
@@ -19,7 +19,7 @@ except:
  
  
   
-
+print resultGet
 print resultPut
 
 # result7 =  head('http://localhost:8002/flask/dannysaban')
